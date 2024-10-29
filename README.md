@@ -17,8 +17,6 @@ GitHub là một dịch vụ lưu trữ mã nguồn (source code) trực tuyến
 - **Pull**: Lệnh này giúp bạn lấy về (fetch) và hợp nhất (merge) các thay đổi mới nhất từ một nhánh trên remote.
 - **.gitignore**: File được sử dụng để loại bỏ các thư mục, file mà mình không muốn push lên máy chủ Git.
 
----
-
 ### 3. Cài đặt Git
 
 Hai điều đầu tiên bạn cần làm là cài đặt git và tạo một tài khoản GitHub miễn phí.
@@ -35,8 +33,6 @@ Hai điều đầu tiên bạn cần làm là cài đặt git và tạo một t�
     - **Xác minh bằng hình ảnh**
     - **Xác thực bằng âm thanh**
 - **Bước 4**: Sau khi hoàn tất xác minh người thật, bạn sẽ cần xác minh email. GitHub sẽ gửi một dãy số vào email của bạn, chỉ cần nhập vào để hoàn thành bước này.
-
----
 
 ### 2. Tạo SSH Key cho tài khoản
 
