@@ -78,3 +78,64 @@ cat ~/.ssh/id_rsa.pub
 **Bước 2**: vào github chọn **setting** chọn **SSH and GPG key** chọn **New SSH key** nhập key đã coppy vào mục key và Nhấn **Add SSH key**
 
 ![](public/image4.png)
+
+### 4. Tạo Repository trên GitHub
+
+**Bước 1**: Đăng nhập tài khoản [Github](https://github.com/login).
+
+**Bước 2**: Sau khi đã đăng nhập, nhấn vào nút " **+** " ở góc trên cùng bên phải của màn hình và chọn **New repository** hoặc nhấn **Create repository** bên góc phải.
+
+![](public/image5.png)
+**Bước 3**: Điền các thông tin và nhấn **Create repository** để khởi tạo
+
+- **Repository name**: Đặt tên cho repository mà bạn muốn tạo.
+- **Description**: Mô tả ngắn gọn về repository (không bắt buộc).
+- **Public/Private**: Chế độ **Public** hoặc **Private** cho repository.
+- **Add a README file**: Khi chọn “Add a README file”, GitHub sẽ tự động tạo tệp `README.md` trong repository và hiển thị ngay trên trang chính.
+  ![](public/image6.png) ![](public/image7.png)
+
+  **Bước 4**: Di chuyển vào thư mục dự án chuột phải và chọn **Git Bash Here**.
+  ![](public/image8.png)
+  **Bước 5**:
+
+- Khởi tạo một repository Git mới trong thư mục hiện tại bằng cách chạy câu lệnh:
+  ```bash
+  git init
+  ```
+  ![](public/image9.png)
+
+**Bước 6**: Liên kết một repository Git cục bộ với một repository từ xa (remote repository)
+
+- Chạy lệnh sau để thêm remote repository:
+  ```bash
+  git remote add origin <SSH link>
+  ```
+- chạy `git remote  –v` để kiểm tra bước 5 đã thành công chưa.
+
+  ![](public/image10.png)
+  ![](public/image11.png)
+
+**Bước 7**: Thêm tất cả các tệp và thư mục đã thay đổi trong thư mục hiện tại
+
+```bash
+ git add .
+```
+
+**Bước 8**: Tạo một commit mới trong Git
+
+```bash
+git commit -m"tên commit"
+```
+
+![](public/image12.png)
+
+**Bước 9**: Đẩy (push) các thay đổi từ branch master trong repository cục bộ lên branch master trên repository từ xa (remote)
+
+```bash
+git push origin tên_nhánh
+```
+
+![](public/image13.png)
+
+Như vậy chúng ta đã hoàn thành việc tạo vào đẩy file lên repo github
+refesh lại trang để xem kết quả
