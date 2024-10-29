@@ -136,3 +136,26 @@ git push origin tên_nhánh
 
 Như vậy chúng ta đã hoàn thành việc tạo vào đẩy file lên repo github
 refesh lại trang để xem kết quả
+
+### 5. Nhánh (Branch)
+
+- Nhánh (branch) là một phiên bản riêng biệt của mã nguồn, giúp bạn phát triển và thử nghiệm các tính năng hoặc sửa lỗi mà không ảnh hưởng đến mã nguồn chính. Nhánh phổ biến nhất trong mỗi repository là nhánh chính ( main hoặc master), nơi lưu trữ phiên bản ổn định của dự án. Khi bạn tạo một nhánh mới, bạn sẽ có một bản sao của mã nguồn ở thời điểm hiện tại, và các thay đổi trên nhánh này sẽ không ảnh hưởng đến nhánh khác cho đến khi bạn "hợp nhất" (merge) chúng.
+
+#### Tạo nhánh:
+
+**- Mở cửa sổ Terminal và di chuyển đến thư mục**
+
+- Chạy lệnh `git checkout -b tên_nhánh` để tạo 1 nhánh mới
+- Chạy `git branch` để xem tất cả nhánh
+- `git push -u origin tên_nhánh` để đưa nhánh lên remote
+- `git checkout tên_nhánh` để di chuyển giữa các nhánh
+
+![](public/image15.png)
+
+### 6. Đẩy lên github sau khi làm việc
+
+- Mở Terminal và di chuyển vào thư mục dự án
+- Chạy `git add .` để thêm toàn bộ file đã thay đổi
+- Chạy `git commit -m"tên_commit"` để tạo 1 commit mới
+- Chạy `git push origin tên_nhánh` để Push lên remote
+  ![](public/image14.png)
