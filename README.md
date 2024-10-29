@@ -93,9 +93,7 @@ cat ~/.ssh/id_rsa.pub
 
   **Bước 4**: Di chuyển vào thư mục dự án chuột phải và chọn **Git Bash Here**.
   ![](public/image8.png)
-  **Bước 5**:
-
-- Khởi tạo một repository Git mới trong thư mục hiện tại bằng cách chạy câu lệnh:
+  **Bước 5**: Khởi tạo một repository Git mới trong thư mục hiện tại bằng cách chạy câu lệnh:
   ```bash
   git init
   ```
@@ -105,7 +103,7 @@ cat ~/.ssh/id_rsa.pub
 
 - Chạy lệnh sau để thêm remote repository:
   ```bash
-  git remote add origin <SSH link>
+  git remote add origin <SSH_link>
   ```
 - chạy `git remote  –v` để kiểm tra bước 5 đã thành công chưa.
 
