@@ -85,7 +85,8 @@ cat ~/.ssh/id_rsa.pub
 
 **Bước 2**: Sau khi đã đăng nhập, nhấn vào nút " **+** " ở góc trên cùng bên phải của màn hình và chọn **New repository** hoặc nhấn **Create repository** bên góc phải.
 
-![](public/image5.png)
+<!-- ![](public/image5.png) -->
+
 **Bước 3**: Điền các thông tin và nhấn **Create repository** để khởi tạo
 
 - **Repository name**: Đặt tên cho repository mà bạn muốn tạo.
