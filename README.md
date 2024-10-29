@@ -52,7 +52,7 @@ Hai điều đầu tiên bạn cần làm là cài đặt git và tạo một t�
 
 **Bước 1**: **Kiểm tra máy đã có SSH key chưa**
 
-- Ở màn hình desktop, chuột phải chọn **Git Bash Here** và chạy lệnh:
+- Ở màn hình desktop, chuột phải chọn **Git Bash Here** chạy lệnh:
   ```bash
   ls -al ~/.ssh
   ```
