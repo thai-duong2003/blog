@@ -152,7 +152,7 @@ refesh lại trang để xem kết quả
 
 ![](public/image15.png)
 
-### 7. Gộp nhánh (merge coder)
+### 6. Gộp nhánh (merge coder)
 
 - gộp nhánh (hay còn gọi là merge) là quá trình kết hợp các thay đổi từ một nhánh này vào nhánh khác. Thao tác này thường được sử dụng khi bạn muốn tích hợp những thay đổi từ một nhánh phụ (feature branch) vào nhánh chính (main hoặc master), để những thay đổi từ nhánh phụ có thể được đưa vào dự án chính thức.
 
@@ -185,7 +185,7 @@ git add <file_có_xung_đột>
 git commit
 ```
 
-### 6. Đẩy lên github sau khi làm việc
+### 7. Đẩy lên github sau khi làm việc
 
 - Mở Terminal và di chuyển vào thư mục dự án
 - Chạy `git add .` để thêm toàn bộ file đã thay đổi
