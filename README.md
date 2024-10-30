@@ -94,9 +94,11 @@ cat ~/.ssh/id_rsa.pub
   **Bước 4**: Di chuyển vào thư mục dự án chuột phải và chọn **Git Bash Here**.
   ![](public/image8.png)
   **Bước 5**: Khởi tạo một repository Git mới trong thư mục hiện tại bằng cách chạy câu lệnh:
+
   ```bash
   git init
   ```
+
   ![](public/image9.png)
 
 **Bước 6**: Liên kết một repository Git cục bộ với một repository từ xa (remote repository)
@@ -149,6 +151,39 @@ refesh lại trang để xem kết quả
 - `git checkout tên_nhánh` để di chuyển giữa các nhánh
 
 ![](public/image15.png)
+
+### 7. Gộp nhánh (merge coder)
+
+- gộp nhánh (hay còn gọi là merge) là quá trình kết hợp các thay đổi từ một nhánh này vào nhánh khác. Thao tác này thường được sử dụng khi bạn muốn tích hợp những thay đổi từ một nhánh phụ (feature branch) vào nhánh chính (main hoặc master), để những thay đổi từ nhánh phụ có thể được đưa vào dự án chính thức.
+
+**Có hai kiểu gộp nhánh chính trong Git:**
+
+- **Merge không có xung đột (Fast-forward merge)**
+  Đây là trường hợp khi nhánh đích chưa có thêm bất kỳ thay đổi nào kể từ khi tạo ra nhánh phụ.
+  Lệnh: `git merge <tên_nhánh>`
+- **Merge có xung đột (Three-way merge)**
+  Xảy ra khi cả hai nhánh đều có thay đổi từ điểm chung cuối cùng (tức là cả nhánh chính và nhánh phụ đều có commit mới).
+  Git sẽ tạo ra một commit gộp mới để kết hợp các thay đổi từ cả hai nhánh.
+
+**Quy trình gộp nhánh (Merge)**
+Chuyển đến nhánh mà bạn muốn gộp vào (thường là nhánh chính):
+
+```bash
+git checkout main
+```
+
+Sau đó thực hiện lệnh gộp:
+
+```bash
+git merge <ten_nhanh_phu>
+```
+
+Nếu có xung đột, bạn cần mở các file có xung đột, giải quyết chúng, sau đó lưu lại và hoàn tất quá trình bằng lệnh:
+
+```bash
+git add <file_có_xung_đột>
+git commit
+```
 
 ### 6. Đẩy lên github sau khi làm việc
 
